@@ -56,10 +56,6 @@ export default function Scene() {
       setMaterials(snapshot.val())
     })
 
-    window.addEventListener('beforeunload', () => {
-      remove(ref(database, `players/${mainPlayerId}`))
-    })
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
