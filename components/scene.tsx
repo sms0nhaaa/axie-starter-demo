@@ -64,7 +64,7 @@ export default function Scene() {
   }, [])
 
   return (
-    <div className="w-screen h-screen bg-gradient-to-b from-emerald-300 from-10% to-emerald-500 to-90%">
+    <div className="w-screen h-screen bg-gradient-to-b from-emerald-300 from-10% to-emerald-500 to-90% ">
       <Canvas>
         <ambientLight intensity={2} />
         <PerspectiveCamera makeDefault position={[0, 5, 10]} castShadow />
