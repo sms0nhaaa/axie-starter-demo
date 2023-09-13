@@ -33,7 +33,7 @@ function Other({ player }: { player: Player }) {
     if (playerRef.current) {
       nextPosition.fromArray([player.position.x, player.position.y, player.position.z])
       nextQuaternion.fromArray([player.quaternion.x, player.quaternion.y, player.quaternion.z, player.quaternion.w])
-      playerRef.current.position.lerp(nextPosition, 0.5)
+      playerRef.current.position.lerp(nextPosition, 0.3)
       playerRef.current.quaternion.rotateTowards(nextQuaternion, 0.4)
     }
   })
