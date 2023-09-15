@@ -1,10 +1,10 @@
 import { auth, database } from '@/services/firebase'
 import usePlayerStore from '@/stores/player'
-import { PerspectiveCamera, useGLTF } from '@react-three/drei'
+import { PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { Physics } from '@react-three/rapier'
 import { signInAnonymously } from 'firebase/auth'
-import { onValue, ref, remove, set } from 'firebase/database'
+import { onValue, ref, set } from 'firebase/database'
 import { Suspense, useEffect, useState } from 'react'
 import { MapPhysic } from './map-physic'
 import Materials from './materials'
@@ -78,7 +78,3 @@ export default function Scene() {
     </div>
   )
 }
-
-useGLTF.preload('/raw/starter_buba.glb')
-useGLTF.preload('/raw/starter_puffy.glb')
-useGLTF.preload('/raw/starter_pomodoro.glb')

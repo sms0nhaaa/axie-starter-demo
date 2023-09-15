@@ -1,13 +1,15 @@
 'use client'
 
-import Overlay from '@/components/overlay'
-import Scene from '@/components/scene'
+import dynamic from 'next/dynamic'
+
+const SceneNoSSR = dynamic(() => import('@/components/scene'), { ssr: false })
+const OverlayNoSSR = dynamic(() => import('@/components/overlay'), { ssr: false })
 
 export default function Home() {
   return (
     <main className="flex w-screen h-screen bg-gradient-radial cursor-c-auto active:cursor-c-auto-clicked">
-      <Scene />
-      <Overlay />
+      <SceneNoSSR />
+      <OverlayNoSSR />
     </main>
   )
 }

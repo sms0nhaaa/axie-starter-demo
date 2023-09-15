@@ -1,4 +1,4 @@
-import { Buba, Pomodoro, Puffy } from '@/components/axies'
+import { Buba, Pomodoro, Puffy } from '@sms0nhaaa/r3f-axie-starter'
 import { Player, Players } from '@/types/player'
 import { Html } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'

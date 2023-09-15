@@ -11,7 +11,7 @@ import { useMemo, useRef } from 'react'
 import { useKeyPressEvent } from 'react-use'
 import * as THREE from 'three'
 import { Vector3 } from 'three'
-import { Buba, Pomodoro, Puffy } from '@/components/axies'
+import { Buba, Pomodoro, Puffy } from '@sms0nhaaa/r3f-axie-starter'
 import usePlayerStore from '@/stores/player'
 
 const SPEED = 10
